@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript本格入門</title>
+</head>
+<body>
+<script type="text/javascript">
+  let book = {title: 'Javaポケットリファレンス', publish:'技術評論社', price:2680,
+    other: {keywd: 'Java SE 8', logo: 'logo.jpg'} };
+  let {title, other, other: {keywd}} = book;
+
+  console.log(title);
+  console.log(other); //配列otherが変数otherに分割代入
+  console.log(keywd); //配列otherのkeywdの値が変数keywdに分割代入
+  console.log(book.publish);//publishとpriceは変数に格納されていないので無視されそのまま
+
+  console.log(other.logo);
+  console.log(book.other.keywd);
+  console.log(other['keywd']);
+
+
+</script>
+<noscript>Javascriptが利用できません</noscript>
+</body>
+</html>

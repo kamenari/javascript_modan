@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript本格入門</title>
+</head>
+<body>
+<script type="text/javascript">
+  var str = 'WINGSプロジェクト';
+  console.log(str.substring(5, -2)); //結果：WINGS（1~5文字目を抽出）
+  // 引数の-2を0と見なしている、引数start>引数endのため関係を入れ替えている
+
+  console.log(str.slice(5, -2)); // 結果：プロジェ（6~9文字目を抽出）
+  //引数-2を後方からの文字列と見なしている、「str.slice(5, 9)」と同じ
+
+</script>
+<noscript>Javascriptが利用できません</noscript>
+</body>
+</html>

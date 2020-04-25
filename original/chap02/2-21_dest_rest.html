@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript本格入門</title>
+</head>
+<body>
+<script type="text/javascript">
+  let data = [56, 40, 26, 82, 19, 17, 73, 99];
+  let [x0, x1, x2, ...other] = data;
+
+  console.log(x0);
+  console.log(x1);
+  console.log(x2);
+
+  console.log(other);
+  console.log(other[0]); //82から配列otherとして切り分けられている
+  console.log(data[2]);
+</script>
+<noscript>Javascriptが利用できません</noscript>
+</body>
+</html>

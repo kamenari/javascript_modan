@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript本格入門</title>
+</head>
+<body>
+<script type="text/javascript">
+  var data = ['apple', 'orange', 'banana'];
+  Array.prototype.hoge = function() {} //配列の機能を拡張
+  for (var key in data) {
+    console.log(data[key]);
+  } //for_inだと配列に追加した機能そのものも列挙されてしまうため、配列ではfor文を使うべき
+
+</script>
+<noscript>Javascriptが利用できません</noscript>
+</body>
+</html>

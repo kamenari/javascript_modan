@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript本格入門</title>
+</head>
+<body>
+<script type="text/javascript">
+  let book = {title: 'Javaポケットリファレンス', publish:'技術評論社', price:2680 };
+  let {price, title, memo = 'なし'} = book;
+  //プロパティと紐付いた変数名に分割代入
+  console.log(title);
+  console.log(price);
+  console.log(memo);
+
+  console.log(book.publish);　//配列から読んできているからエラーにならない
+  console.log(publish); //配列からではなく直接プロパティのを指定しているのでエラーになる
+</script>
+<noscript>Javascriptが利用できません</noscript>
+</body>
+</html>

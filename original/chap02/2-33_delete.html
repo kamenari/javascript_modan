@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript本格入門</title>
+</head>
+<body>
+<script type="text/javascript">
+  var ary = ['javascript' , 'Ajax' , 'ASP.NET'];
+  console.log(delete ary[0]); //ary配列のインデックス番号0を削除
+  //削除が成功すればture、失敗すればfalse
+  console.log(ary);
+
+ var obj = {x:1, y:2};
+ console.log(delete obj.x);//keyのxを削除
+ console.log(obj.x);
+
+var obj2 = {x:obj, y:2};
+console.log(delete obj2.x);//中身のプロパティが削除されるだけで、オブジェクト(obj2)が削除される訳ではない
+console.log(obj2);
+
+var data1 = 1;
+console.log(delete data1);//明示的(varがついてるから？)に宣言された変数は削除できないのでfalse
+console.log(data1);
+
+data2 = 10;
+console.log(delete data2);
+console.log(data2);
+
+</script>
+<noscript>Javascriptが利用できません</noscript>
+</body>
+</html>

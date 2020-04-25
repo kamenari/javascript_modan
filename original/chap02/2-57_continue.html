@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript本格入門</title>
+</head>
+<body>
+<script type="text/javascript">
+  var result = 0;
+  for (var i = 0; i < 100; i++) {
+    if (i % 2 === 0) {continue;} // 条件にあった場合のみループをスキップする。
+    result += i;　//変数iが偶数の場合、result変数には加算しないでスキップしている
+  }
+  console.log('合計：' + result);
+
+</script>
+<noscript>Javascriptが利用できません</noscript>
+</body>
+</html>
