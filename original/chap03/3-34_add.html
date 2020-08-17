@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript本格入門</title>
+</head>
+<body>
+<script type="text/javascript">
+var dat = new Date(2017, 4, 15, 11, 40);
+console.log(dat.toLocaleString()); //結果：2017/5/15 11:40:00
+dat.setMonth(dat.getMonth() + 3); //3ヶ月を加算
+console.log(dat.toLocaleString()); //結果：2017/8/15 11:40:00
+dat.setDate(dat.getDate() - 20); //20日を減算
+console.log(dat.toLocaleString()); //結果：2017/7/26 11:40:00
+//加算、減算の結果が有効範囲を超えても自動的に換算してくれる
+
+</script>
+<noscript>Javascriptが利用できません</noscript>
+</body>
+</html>

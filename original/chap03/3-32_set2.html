@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript本格入門</title>
+</head>
+<body>
+<script type="text/javascript">
+let s = new Set(); //重複しない値の集合を管理
+s.add(NaN);
+s.add(NaN);
+console.log(s.size); // 結果：1
+//NaNが同じ値と解釈されて無視される
+
+s.add({});
+s.add({});
+console.log(s.size); // 結果：3
+// {} は異なるオブジェクトとして解釈される
+
+</script>
+<noscript>Javascriptが利用できません</noscript>
+</body>
+</html>

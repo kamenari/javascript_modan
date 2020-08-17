@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript本格入門</title>
+</head>
+<body>
+<script type="text/javascript">
+var p = /^[0-9]{1,}/gm; //マルチラインモード有効
+var str = '101匹ワンちゃん。 \n7人の小人';
+var result = str.match(p);
+for (var i = 0, len = result.length; i < len; i++) {
+  console.log(result[i]);
+}
+
+</script>
+<noscript>Javascriptが利用できません</noscript>
+</body>
+</html>
