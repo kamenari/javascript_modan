@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript本格入門</title>
+</head>
+<body>
+<script type="text/javascript">
+var obj = new Object();
+console.log(obj.toString()); //結果：[Object Object]
+console.log(obj.valueOf()); //結果：{}
+
+var dat = new Date();
+console.log(dat.toString()); //結果：Sat Aug 22 2020 13:44:43 GMT+0900 (日本標準時)
+console.log(dat.valueOf()); //結果：1598071535449
+
+var ary = ['prototype.js', 'Jquery', 'Yahoo UI'];
+console.log(ary.toString()); //結果：prototype.js,Jquery,Yahoo UI
+console.log(ary.valueOf()); //結果：["prototype.js", "Jquery", "Yahoo UI"]
+
+var num = 10;
+console.log(num.toString()); //結果：10
+console.log(num.valueOf()); //結果：10
+
+var reg = /[0-9]{3}-[0-9]{4}/g;
+console.log(reg.toString()); //結果：/[0-9]{3}-[0-9]{4}/g
+console.log(reg.valueOf()); //結果：/[0-9]{3}-[0-9]{4}/g
+
+//toStringメソッド　→　文字列を返す
+//valueOfメソッド　→　文字列以外の基本型の値が返されることを「期待して」使われる
+
+</script>
+<noscript>Javascriptが利用できません</noscript>
+</body>
+</html>

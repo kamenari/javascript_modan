@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript本格入門</title>
+</head>
+<body>
+<script type="text/javascript">
+var str = '!"#$&()+-*/@_|;:,.';
+console.log(encodeURI(str)); //結果：!%22#$&()+-*/@_%7C;:,.
+console.log(encodeURIComponent(str)); //結果：!%22%23%24%26()%2B-*%2F%40_%7C%3B%3A%2C.
+
+</script>
+<noscript>Javascriptが利用できません</noscript>
+</body>
+</html>

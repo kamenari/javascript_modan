@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript本格入門</title>
+</head>
+<body>
+<script type="text/javascript">
+let pet = {
+  type: 'スノーホワイトハムスター',
+  name: 'キラ',
+  description: {
+    birth: '2014-02-15'
+  }
+};
+
+let pet2 = {
+  name: '山田キラ',
+  color: '白',
+  description: {
+    food: 'ひまわりのタネ'
+  }
+};
+
+let pet3 = {
+  weight: 42,
+  photo: 'http://www.wings.msn.to/img/kam.jpg'
+};
+
+//Object.assign(pet, pet2, pet3); //petにpet2とpet3を上書きするため、元のpetもマージされている
+console.log(pet);
+let merged = Object.assign({}, pet, pet2, pet3); //空のオブジェクトに対してマージしているので、元のオブジェクトには影響されない
+console.log(merged);
+
+</script>
+<noscript>Javascriptが利用できません</noscript>
+</body>
+</html>

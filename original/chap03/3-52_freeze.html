@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript本格入門</title>
+</head>
+<body>
+<script type="text/javascript">
+'use strict';
+var pet = {type: 'スノーホワイトハムスター', name:'キラ'};
+
+//以下をそれぞれコメントインして動作を確認
+// Object.preventExtensions(pet); //結果：weightプロパティを追加できない
+// Object.seal(pet);　//結果：wtypeプロパティを削除できない
+// Object.freeze(pet); //結果：wnameプロパティは読み取り専用
+
+// 既存のプロパティの値を変更
+pet.name = '山田キラ';
+// 既存のプロパティを削除
+delete pet.type;
+// 既存のプロパティｗｐ追加
+pet.weight = 42;
+
+</script>
+<noscript>Javascriptが利用できません</noscript>
+</body>
+</html>
